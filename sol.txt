@@ -1,0 +1,26 @@
+using serial: only one thread executes the code its slower than executing the same code with multiple threads.
+
+using parallel: Its faster than serialbecause multiple threads execute the same code we increase the number of threads
+the time decreases. taking a shot of running time:
+
+
+total time for 1 thread  0.00175309
+total time for 2 threads 0.000234842
+total time for 3 threads 0.000175953
+total time for 4 threads 0.000230074
+total time for 5 threads 0.000163794
+total time for 6 threads 0.000256062
+total time for 7 threads 0.000207901
+total time for 8 threads 0.000194788
+
+It is generally true that using multiple threads can slow down the
+execution time of a program, at least to some extent. 
+This is because creating and managing threads requires additional overhead, such as the time and resources needed to create and destroy threads, as well as the 
+time and resources needed to synchronize access to shared data between threads.
+
+However, using multiple threads can also improve the performance of a program in certain cases, particularly when the program can 
+take advantage of multiple CPU cores or when it needs to perform tasks concurrently.
+
+Whether using multiple threads will improve or degrade the performance of a program depends on a variety of factors, including the hardware and operating system being used, the workload being processed, 
+and the efficiency of the implementation. In some cases, using multiple threads may significantly improve the performance of a program, while in other cases it may only have a minor impact or even degrade 
+the performance.
